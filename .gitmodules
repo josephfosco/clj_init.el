@@ -1,0 +1,6 @@
+[submodule "lib/ac-cider"]
+	path = lib/ac-cider
+	url = git://github.com/clojure-emacs/ac-cider.git
+[submodule "lib/neotree"]
+	path = lib/neotree
+	url = git://github.com/jaypei/emacs-neotree
