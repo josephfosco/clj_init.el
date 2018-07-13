@@ -3,6 +3,7 @@
 ;; User this file to initiate the pack configuration.
 ;; See README for more information.
 
+(setq live-disable-zone t)
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 
@@ -24,6 +25,11 @@
 (live-add-pack-lib "neotree")
 (require 'neotree)
 (setq neo-window-width 35)
+(live-add-pack-lib "x-copypaste")
+(require 'x-copypaste)
+
+;;(setq x-select-enable-clipboard t)
+;;(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 
 
 (defun clear-buffer ()
