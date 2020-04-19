@@ -12,6 +12,10 @@
 ;;(set-frame-position (selected-frame) 386 0)
 (setq split-height-threshold 1200)  ;; do not automatically split vertically
 (setq split-width-threshold 2000)   ;; do not automatically split horizontally
+;; next 2 lines are to make windows split horizontally by default
+(setq split-height-threshold nil)
+(setq split-width-threshold 0)
+
 ;; turn off word-wrap
 (set-default 'truncate-lines t)
 ;; turn off word-wrap in vertical split windows
@@ -25,6 +29,8 @@
 (live-add-pack-lib "neotree")
 (require 'neotree)
 (setq neo-window-width 35)
+(setq neo-show-hidden-files t)
+;; (setq split-window-preferred-function 'neotree-split-window-sensibly)
 (live-add-pack-lib "x-copypaste")
 (require 'x-copypaste)
 
