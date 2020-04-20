@@ -30,7 +30,7 @@
 (require 'neotree)
 (setq neo-window-width 35)
 (setq neo-show-hidden-files t)
-;; (setq split-window-preferred-function 'neotree-split-window-sensibly)
+(setq neo-autorefresh nil)
 (live-add-pack-lib "x-copypaste")
 (require 'x-copypaste)
 
